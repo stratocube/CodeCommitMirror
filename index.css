@@ -6,8 +6,8 @@ body {
     width: 100%;
     height: 100px;
     background: lightgreen;
-    border-top: 10px dotted black;
-    border-bottom: 10px dotted black;
+    border-top: 10px dotted;
+    border-bottom: 10px dotted;
     text-align: center;
     display: table;
 }
@@ -99,4 +99,9 @@ table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
     padding: 5px 10px;
+}
+
+audio {
+    display: inline;
+    height: 16px;
 }
