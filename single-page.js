@@ -31,6 +31,21 @@ function loadTab(tabId) {
     $('#' + lastTab).attr('class', '');
     lastTab = tabId;
     $('#' + tabId).attr('class', 'active');
+
+    setBackground(tabId);
+}
+
+function setBackground(tabId) {
+    var backgroundCss;
+
+    switch(tabId) {
+        case 'music':
+            backgroundCss = { 'background-image': 'url(images/seamless-music.jpg)' };
+            break;
+        default:
+            backgroundCss = { 'background-color': 'darkslategrey', 'background-image': 'none' };
+    }
+    $('body').css(backgroundCss);
 }
 
 function gotoContent() {

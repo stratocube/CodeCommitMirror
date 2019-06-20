@@ -85,7 +85,7 @@ body {
 
 #tab-content {
     background: lightgreen;
-    padding: 10px 50px;
+    #padding: 10px 50px;
     border: 2px solid black;
     border-top: none;
 }
@@ -104,4 +104,25 @@ table, th, td {
 audio {
     display: inline;
     height: 16px;
+}
+
+.tab-content {
+    padding: 10px 50px;
+}
+
+##.tab-content p, .tab-content li, .tab-content table,
+##.tab-content h2, .tab-content h3, .tab-content h4 {
+    background-color: lightgreen;
+    border: 1px solid black;
+    display: inline-block;
+    padding: 5px;
+}
+
+##music-content {
+    background-image: url(images/seamless-music.jpg);
+    background-repeat: repeat-xy;
+}
+
+table {
+    background-image: url(images/parchment.jpg);
 }
