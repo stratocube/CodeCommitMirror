@@ -1,5 +1,6 @@
 body {
     background-color: darkslategray;
+    background-image: none;
 }
 
 #banner {
@@ -116,13 +117,4 @@ audio {
     border: 1px solid black;
     display: inline-block;
     padding: 5px;
-}
-
-##music-content {
-    background-image: url(images/seamless-music.jpg);
-    background-repeat: repeat-xy;
-}
-
-table {
-    background-image: url(images/parchment.jpg);
 }

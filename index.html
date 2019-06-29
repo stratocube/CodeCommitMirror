@@ -6,7 +6,8 @@
 
     <link href='https://fonts.googleapis.com/css?family=Monsieur La Doulaise' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet'>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link id="content-css" rel="stylesheet" href="">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://code.jquery.com/color/jquery.color-2.1.2.js"></script>
@@ -19,15 +20,20 @@
     <h1>Nick's Transcendental Stratocube</h1>
 </div>
 
-<div id="content">
-    <div id="main-content">
-        <div id="enter">
-            <a onclick="gotoContent()">ENTER</a>
-        </div>
 
-        <img id="splash" src="images/boat.jpg">
+<div id="content">
+    <div class="tab" id="content-tab">
+        <button onclick="loadTab(this.id)" id="coding">Coding</button>
+        <button onclick="loadTab(this.id)" id="music">Music</button>
+        <button onclick="loadTab(this.id)" id="math">Mathematics</button>
+        <button onclick="loadTab(this.id)" id="puzzles">Puzzles</button>
+        <button onclick="loadTab(this.id)" id="reading">Reading</button>
+        <button onclick="loadTab(this.id)" id="photos">Photos</button>
+        <button onclick="loadTab(this.id)" id="about">About</button>
     </div>
+    <div id="tab-content"></div>
 </div>
+
 
 </body>
 </html>

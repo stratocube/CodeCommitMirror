@@ -1,7 +1,12 @@
-var lastTab = 'puzzles'
+var lastTab;
 
 function init() {
     animateBanner();
+
+    var firstTab = $('#content-tab button:first-child');
+    lastTab = firstTab.attr('id');
+    firstTab.attr('class', 'active');
+    loadTab(firstTab.attr('id'));
 }
 
 function animateBanner() {
@@ -16,7 +21,7 @@ function animateBanner() {
 }
 
 function loadTab(tabId) {
-    console.log('#' + tabId);
+    console.log(tabId);
 
     $('#tab-content').empty()
     $.get(tabId + '.html', (data) => {
@@ -36,22 +41,12 @@ function loadTab(tabId) {
 }
 
 function setBackground(tabId) {
-    var backgroundCss;
+    var url = 'css/' + tabId + '.css';
 
-    switch(tabId) {
-        case 'music':
-            backgroundCss = { 'background-image': 'url(images/seamless-music.jpg)' };
-            break;
-        default:
-            backgroundCss = { 'background-color': 'darkslategrey', 'background-image': 'none' };
-    }
-    $('body').css(backgroundCss);
-}
-
-function gotoContent() {
-    $('#content').load('content.html', () => {
-        var firstTab = $('#content-tab button:first-child');
-        firstTab.attr('class', 'active');
-        loadTab(firstTab.attr('id'));
+    $.get(url)
+    .done(function() {
+        document.getElementById("content-css").setAttribute('href', url)
+    }).fail(function() {
+        document.getElementById("content-css").setAttribute('href', '')
     });
 }
