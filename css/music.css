@@ -4,5 +4,6 @@ body {
 }
 
 table {
-    background-image: url(../images/parchment.jpg);
+    background-color: darkgrey;
+    font-color: black;
 }
