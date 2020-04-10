@@ -6,6 +6,8 @@ var musicData = [
     ["WTC XIII Preludio", "audio/wtc-13-prelude.mp3"],
     ["WTC XVII Preludio", "audio/wtc-17-prelude.mp3"],
     ["WTC XIX Preludio", "audio/wtc-19-prelude.mp3"],
+    ["", ""],
+
     ["English Suite 1 Courante I", "audio/es-1-courante-1.mp3"],
     ["English Suite I Bourree I", ""],
     ["English Suite IV Prelude (half)", "audio/es-4-prelude.mp3"],
@@ -13,15 +15,18 @@ var musicData = [
     ["English Suite IV Courante", ""],
     ["English Suite IV Sarabande", "audio/es-4-sarabande.mp3"],
     ["English Suite IV Menuet I", ""],
+    ["", ""],
 
-    ["French Suite IV Sarabande", ""],
-    ["French Suite V Sarabande", ""],
+    ["French Suite IV Sarabande", "audio/fs-4-sarabande.mp3"],
+    ["French Suite V Sarabande", "audio/fs-5-sarabande.mp3"],
     ["French Suite VI Allemande", "audio/fs-6-allemande.mp3"],
     ["French Suite VI Sarabande", "audio/fs-6-sarabande.mp3"],
     ["French Suite VI Gavotte", "audio/fs-6-gavotte.mp3"],
     ["French Suite VI Polonaise", ""],
     ["French Suite VI Menuet", ""],
-    ["French Suite VI Gigue", ""],
+    ["French Suite VI Gigue", "audio/fs-6-gigue.mp3"],
+    ["", ""],
+
     ["Two-Part Inventions 1", ""],
     ["Two-Part Inventions 8", ""]
 ]
