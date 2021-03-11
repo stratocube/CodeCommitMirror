@@ -1,5 +1,5 @@
 var musicData = [
-    ["WTC I Preludio", ""],
+    ["WTC I Preludio", "audio/wtc-01=prelude.mp3"],
     ["WTC V Fuga", "audio/wtc-05-fugue.mp3"],
     ["WTC IX Preluio", "audio/wtc-09-prelude.mp3"],
     ["WTC XI Preludio", "audio/wtc-11-prelude.mp3"],
@@ -14,7 +14,7 @@ var musicData = [
     ["English Suite IV Allemande", "audio/es-4-allemande.mp3"],
     ["English Suite IV Courante", ""],
     ["English Suite IV Sarabande", "audio/es-4-sarabande.mp3"],
-    ["English Suite IV Menuet I", ""],
+    ["English Suite IV Menuet I", "audio/es-4-menuet-I.mp3"],
     ["", ""],
 
     ["French Suite IV Sarabande", "audio/fs-4-sarabande.mp3"],
